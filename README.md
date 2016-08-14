@@ -4,6 +4,7 @@
 Given you are using the GitHub API, this package can help you to retrieve ALL results instead of just the first perPage. GitHub API is of this writing limited to 100 results. In case you need all results, this module will retrieve all matches for your request, by parsing the links response attribute and following up to the next page until there is one, then returning all results together like in a sinlg call. 
 
 This release is compatible with the following setup:
+
 https://github.com/mikedeboer/node-github
 https://developer.github.com/v3/
 
