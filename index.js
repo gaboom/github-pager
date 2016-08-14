@@ -17,7 +17,7 @@ function readAll(method, options) {
     (function readRecursive(page, resultsSoFar) {
         var pageOptions = _.extend(options, {
             page: page,
-            perPage: options.perPage ? options.perPage : MAX_PER_PAGE;
+            perPage: options.perPage ? options.perPage : MAX_PER_PAGE
         });
         Q.nfcall(method, pageOptions).done(function(response){
             if (response.incomplete_results !== false) {
