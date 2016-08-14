@@ -38,3 +38,7 @@ Duplicate items are filtered using the number attribute as unique key.
 ##### parseLinks(links)
 
 Synchronous method to parse GitHub API links attribute. Returns array of links.
+
+### Quality Assurance
+
+THIS IS AS-IS CODE WRITTEN AS A QUICK HACK. USE IT AT YOUR OWN RISK.
