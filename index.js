@@ -45,7 +45,7 @@ function reduceUnique(items) {
 }
 
 function readAllUnique(method, options) {
-    return reduceUnique(readAll(method, options));
+    return readAll(method, options).then(reduceUnique);
 }
 
 module.exports = {

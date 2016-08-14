@@ -16,7 +16,7 @@ To retrieve all pull requests between to dates:
 
 ```javascript
 githubPager.readAllUnique(github.search.issues, {
-    q: 'repo:${options.owner}/${options.repory type:pr created:${options.dateFrom}..${options.dateTo}',
+    q: 'repo:${options.owner}/${options.repository} type:pr created:${options.dateFrom}..${options.dateTo}',
     sort: 'created',
     order: 'asc'
 })
@@ -34,7 +34,7 @@ Duplicate items are possible in the resolved response.
 ##### readAllUnique(method, options) 
 
 Execute the GitHub API method with given options and return its promise. perPage defaults to 100.
-Duplicate items are filtered using the number attribute as unique key.
+Duplicate items from the results are filtered using the number attribute as unique key.
 
 ##### parseLinks(links)
 
