@@ -51,5 +51,5 @@ function readAllUnique(method, options) {
 module.exports = {
     parseLinks: parseLinks,
     readAll: readAll,
-    reduceUnique: reduceUnique
+    readAllUnique: readAllUnique
 }
